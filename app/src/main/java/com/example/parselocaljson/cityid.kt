@@ -3,36 +3,27 @@ package com.example.parselocaljson
 import com.google.gson.annotations.SerializedName
 
 
+class cid(
+    @SerializedName("arc")
+    val arc : ArrayList<mm>
+){
+    class mm(
 
-class cid {
-
-    @SerializedName("cd")
-    var cd:List<city>?=null
-
-    class city {
-        @SerializedName("id")
-        var id: Int? = null
-
-        @SerializedName("name")
-        var name: String? = null
-
-        @SerializedName("country")
-        var country: String? = null
-
-        @SerializedName("state")
-        var state: String? = null
-
-        @SerializedName("coord")
-        var coord: cooord? = null
-
-        class cooord() {
-            @SerializedName("lon")
-            var lon: Float? = null
-
-            @SerializedName("lat")
-            var lat: Float? = null
-        }
-    }
-
-
+        @SerializedName("copyright")
+        val copyright : String,
+        @SerializedName("date")
+        val date : String,
+        @SerializedName("explanation")
+        val explanation : String,
+        @SerializedName("hdurl")
+        val hdurl : String,
+        @SerializedName("media_type")
+        val media_type : String,
+        @SerializedName("service_version")
+        val service_version : String,
+        @SerializedName("title")
+        val title : String,
+        @SerializedName("url")
+        val url : String
+    )
 }
